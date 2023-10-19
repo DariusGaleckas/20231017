@@ -1,20 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <script>
-
-
-    </script>
-    
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,7 +17,7 @@
 
       console.log(hello);
 
-        hello = hello + name + `.`;
+      hello = hello + name + `.`;
 
       console.log(hello);
       document.write(hello);
@@ -41,11 +26,11 @@
       document.write(`<h2>Antra užduotis</h2>`);
 
       function simbolsCount(text) {
-            return text = text.length
-        };
+        return (text = text.length);
+      }
 
-        let word = simbolsCount("darbastalis");
-        document.write(word);
+      let word = simbolsCount("darbastalis");
+      document.write(word);
 
       //trečia užduotis
       document.write(`<h2>Trečia užduotis</h2>`);
@@ -64,37 +49,68 @@
       // };
       // document.write(text)
 
+      function firsLastName(name, last_name) {
+        return `${name.charAt(0).toUpperCase() + name.slice(1, name.length)} ${
+          last_name.charAt(0).toUpperCase() +
+          last_name.slice(1, last_name.length)
+        } `;
+      }
+      console.log(firsLastName("mantas", `galiunas`));
+      document.write(firsLastName(`eduardas`, `galiunas`));
 
-function firsLastName(name, last_name) {
-  return `${name.charAt(0).toUpperCase() + name.slice(1, name.length)} ${last_name.charAt(0).toUpperCase() + last_name.slice(1, last_name.length)} `
-}
+      const myWeather = "oras negeras rytoj";
+      const words = myWeather.split(``);
 
-console.log(firsLastName("mantas",`galiunas`));
-document.write(firsLastName(`eduardas`, `galiunas`))
-      
+      words
+        .map((word) => {
+          return word[0].toUpperCase() + word.substr(1);
+        })
+        .join(``);
 
-      
+      console.log();
+
+      const mySentence = "freeCodeCamp is an awesome resource";
+      const words1 = mySentence.split(" ");
+
+      words1
+        .map((word1) => {
+          return word1[0].toUpperCase() + word1.substring(1);
+        })
+        .join(" ");
+
+      console.log();
+
       //Ketvirta užduotis
       document.write(`<h2>Ketvirta užduotis</h2>`);
 
+      function rand(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
 
+      let sk1 = rand(0, 5);
+      let sk2 = rand(0, 5);
+      let sk3 = rand(0, 5);
 
+      document.write(`${sk1}, ${sk2}, ${sk3}`);
 
+      function threeRandom(dd) {}
 
+      //Penkta užduotis
+      document.write(`<h2>Penkta užduotis</h2>`);
 
-      
+      //šešta užduotis
+      document.write(`<h2>Šešta užduotis</h2>`);
+      let sk4 = `3`;
+      let sk5 = `2`;
 
+      document.write(sk4 ** sk5);
 
+      //Septinta užduotis
+      document.write(`<h2>Septinta užduotis</h2>`);
 
-
-
-
-
-
-
-
-
-      
+      document.write();
     </script>
   </body>
 </html>
