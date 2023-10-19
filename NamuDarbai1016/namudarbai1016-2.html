@@ -32,9 +32,8 @@
 
       console.log(hello);
 
-      if (true) {
         hello = hello + name + `.`;
-      }
+
       console.log(hello);
       document.write(hello);
 
@@ -50,6 +49,46 @@
 
       //trečia užduotis
       document.write(`<h2>Trečia užduotis</h2>`);
+
+      //let name1 = `darius`;
+      //let last_name = `gal`;
+      //text = ``;
+
+      //console.log(text = name1 + last_name);
+
+      //console.log(text.toLocaleUpperCase());
+      //document.write(text.toLocaleUpperCase());
+
+      // function toLocaleUpperCase(text) {
+      //   return text = text.toLocaleUpperCase()
+      // };
+      // document.write(text)
+
+
+function firsLastName(name, last_name) {
+  return `${name.charAt(0).toUpperCase() + name.slice(1, name.length)} ${last_name.charAt(0).toUpperCase() + last_name.slice(1, last_name.length)} `
+}
+
+console.log(firsLastName("mantas",`galiunas`));
+document.write(firsLastName(`eduardas`, `galiunas`))
+      
+
+      
+      //Ketvirta užduotis
+      document.write(`<h2>Ketvirta užduotis</h2>`);
+
+
+
+
+
+
+      
+
+
+
+
+
+
 
 
 
