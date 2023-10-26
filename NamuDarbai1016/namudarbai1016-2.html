@@ -12,15 +12,25 @@
       //pirma užduotis
       document.write(`<h2>Pirma užduotis</h2>`);
 
-      let name = `Elena`;
-      let hello = `Labas, `;
+      //let name = `Elena`;
+      //let hello = `Labas, `;
 
-      console.log(hello);
+      //console.log(hello);
 
-      hello = hello + name + `.`;
+      //hello = hello + name + `.`;
 
-      console.log(hello);
-      document.write(hello);
+      //console.log(hello);
+      //document.write(hello);
+
+      function hello(name) {
+        return `<span>Labas, ${name}</span>`;
+      };
+
+        let say = hello("Elena");
+        document.write(say);
+
+
+
 
       //antra užduotis
       document.write(`<h2>Antra užduotis</h2>`);
